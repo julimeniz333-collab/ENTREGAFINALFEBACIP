@@ -51,6 +51,3 @@ Si falla el catálogo o el estado inicial, se ofrece reintentar. Si el almacenam
 
 El historial se conserva únicamente en este navegador y origen. No es un comprobante de pago real ni se sincroniza entre dispositivos.
 
-## Validación realizada
-
-Se probó en Chromium con Playwright: búsqueda y categoría combinadas, búsqueda sin resultados, prevención de duplicados, edición de montos, rechazo de montos negativos, persistencia al recargar, baja individual, cancelación y confirmación de donaciones, comprobantes y borrado independiente de cada sección. También se verificaron almacenamiento corrupto, escritura bloqueada, respuesta HTTP 500, JSON inválido, reintento y librería externa no disponible. Se revisaron las vistas de escritorio (1440 px) y móvil (390 px), sin desborde horizontal. El flujo normal terminó sin errores JavaScript; `node --check js/main.js` y `git diff --check` pasaron.
