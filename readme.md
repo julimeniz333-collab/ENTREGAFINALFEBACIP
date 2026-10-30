@@ -2,15 +2,6 @@
 
 Proyecto final de JavaScript: elegí asociaciones civiles, armá tus aportes y confirmá una donación simulada. No procesa pagos, no envía mensajes y no requiere registro.
 
-## Cómo ejecutarlo
-
-Desde la carpeta del proyecto:
-
-```sh
-python3 -m http.server 8000
-```
-
-Abrí el sitio servido en el puerto 8000 en tu navegador. También podés usar Live Server de Visual Studio Code. No abras `index.html` directamente con `file://`: Fetch necesita un servidor HTTP. Se necesita conexión a Internet para cargar SweetAlert2 desde jsDelivr. No hay dependencias npm ni compilación.
 
 ## Recorrido
 
