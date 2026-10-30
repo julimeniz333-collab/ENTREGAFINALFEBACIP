@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEBACIP · Aportes que unen</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="marca" href="#inicio">FEBA<span>CIP</span></a>
+        <nav aria-label="Navegación principal">
+            <a href="#directorio">Asociaciones</a>
+            <a href="#aportes">Mis aportes</a>
+            <a href="#historial">Historial</a>
+        </nav>
+    </header>
+    <main id="inicio">
+        <section class="presentacion">
+            <p class="etiqueta">COMUNIDAD · BUENOS AIRES</p>
+            <h1>Un pequeño aporte.<br>Una comunidad más fuerte.</h1>
+            <p>Conocé a las asociaciones civiles de nuestra comunidad y elegí qué proyectos acompañar.</p>
+            <a class="boton" href="#directorio">Encontrá tu causa <span aria-hidden="true">↗</span></a>
+            <p class="nota">Simulador educativo: no se realizan pagos ni se envían solicitudes reales.</p>
+        </section>
+        <p id="mensaje" role="status" aria-live="polite"></p>
+        <div class="distribucion">
+            <section id="directorio" aria-labelledby="titulo-directorio">
+                <p class="etiqueta">ELEGÍ DÓNDE SUMAR</p>
+                <h2 id="titulo-directorio">Asociaciones que transforman</h2>
+                <div class="filtros">
+                    <label>Buscar asociación o localidad
+                        <input id="busqueda" type="search" placeholder="Nombre o localidad…" disabled>
+                    </label>
+                    <label>Categoría
+                        <select id="categoria" disabled><option value="">Todas las categorías</option></select>
+                    </label>
+                </div>
+                <p id="estado" role="status">Cargando asociaciones…</p>
+                <button id="reintentar" type="button" hidden>Reintentar carga</button>
+                <div id="contenedor-asociaciones" class="contenedor-asociaciones" aria-busy="true"></div>
+            </section>
+            <aside id="aportes" aria-labelledby="titulo-aportes">
+                <p class="etiqueta">TU COMPROMISO</p>
+                <h2 id="titulo-aportes">Mis aportes</h2>
+                <p class="ayuda">Agregá una asociación y ajustá el monto antes de confirmar.</p>
+                <div id="lista-aportes"></div>
+                <div class="total"><span>Total a donar</span><strong id="total">$ 0</strong></div>
+                <button id="confirmar" class="boton" type="button" disabled>Confirmar donación simulada</button>
+                <button id="vaciar-aportes" class="secundario" type="button" disabled>Vaciar aportes</button>
+                <p class="nota">Los montos se expresan en pesos argentinos. Tu selección se guarda en este navegador.</p>
+            </aside>
+        </div>
+        <section id="historial" aria-labelledby="titulo-historial">
+            <div class="cabecera-seccion">
+                <div><p class="etiqueta">CADA APORTE CUENTA</p><h2 id="titulo-historial">Tu historial solidario</h2></div>
+                <button id="borrar-historial" class="secundario" type="button" disabled>Borrar historial</button>
+            </div>
+            <p id="resumen-historial"></p>
+            <div id="lista-historial"></div>
+        </section>
+    </main>
+    <footer><strong>FEBACIP</strong><p>Federación Bonaerense de Asociaciones Civiles de Interés Público</p><p>Proyecto final de JavaScript · Simulación educativa</p></footer>
+</body>
+</html>
