@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Club Social y Deportivo El Progreso",
+        "categoria": "Club deportivo",
+        "localidad": "Isidro Casanova",
+        "objetivo": "Promover actividades deportivas y sociales para la comunidad.",
+        "socios": 350
+    },
+    {
+        "id": 2,
+        "nombre": "Centro Comunitario Esperanza",
+        "categoria": "Centro comunitario",
+        "localidad": "San Justo",
+        "objetivo": "Brindar acompañamiento social y actividades para niños y familias.",
+        "socios": 180
+    },
+    {
+        "id": 3,
+        "nombre": "Asociación Civil Manos Solidarias",
+        "categoria": "Asociación civil",
+        "localidad": "Ramos Mejía",
+        "objetivo": "Desarrollar proyectos solidarios y comunitarios.",
+        "socios": 120
+    },
+    {
+        "id": 4,
+        "nombre": "Sociedad de Fomento Unión Vecinal",
+        "categoria": "Sociedad de fomento",
+        "localidad": "Gregorio de Laferrere",
+        "objetivo": "Promover mejoras y actividades para los vecinos del barrio.",
+        "socios": 290
+    },
+    {
+        "id": 5,
+        "nombre": "Centro Cultural Nuevos Caminos",
+        "categoria": "Centro cultural",
+        "localidad": "Ciudad Evita",
+        "objetivo": "Fomentar actividades culturales, educativas y artísticas.",
+        "socios": 160
+    },
+    {
+        "id": 6,
+        "nombre": "Club Social Juventud Unida",
+        "categoria": "Club deportivo",
+        "localidad": "Virrey del Pino",
+        "objetivo": "Generar espacios deportivos y recreativos para jóvenes.",
+        "socios": 410
+    }
+]
